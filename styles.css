@@ -1,0 +1,34 @@
+:root {
+	--setable-style1-left-column-color: #4a75c6;
+	--setable-style1-right-column-color: #000;
+}
+table.style1 {
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 14px;
+	font-family: Tahoma;
+}
+table.style1 thead tr th {
+	padding: 5px 8px;
+	text-align: left;
+}
+table.style1 tbody tr:first-child td {
+	padding-top: 0;
+}
+table.style1 tbody tr:last-child td {
+	padding-bottom: 0;
+}
+table.style1 tbody tr td {
+	padding: 5px 8px;
+	white-space: normal;
+}
+table.style1 tbody tr td:not(:first-child) {
+	color: var(--setable-style1-right-column-color);
+}
+table.style1 tbody tr td:first-child {
+	min-width: 220px;
+	color: var(--setable-style1-left-column-color);
+	padding-left: 0;
+}
